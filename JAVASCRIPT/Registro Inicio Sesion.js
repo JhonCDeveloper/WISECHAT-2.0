@@ -10,46 +10,50 @@ function showRegister() {
 
 document.addEventListener('DOMContentLoaded', function() {
     showLogin(); // Mostrar formulario de inicio de sesión por defecto
-});
 
-let users = [
-    { email: "sergiioriivera7@gmail.com", password: "Sergio123" },
-    { email: "Yuranytamara@gmail.com", password: "Tamara123" },
-    { email: "jairovalencia100K19@gmail.com", password: "100K1718" },
-    { email: "isagoz1708@gmail.com", password: "Isa123" },
-    // Añade más usuarios según sea necesario
-];
+    let users = [
+        { email: "sergiioriivera7@gmail.com", password: "Sergio123" },
+        { email: "Yuranytamara@gmail.com", password: "Tamara123" },
+        { email: "jairovalencia100K19@gmail.com", password: "100K1718" },
+        { email: "isagoz1708@gmail.com", password: "Isa123" },
+    ];
 
-function authenticate(email, password) {
-    return users.some(user => user.email === email && user.password === password);
-}
+    function authenticate(email, password) {
+        return users.some(user => user.email === email && user.password === password);
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const email = document.getElementById('loginEmail').value;
-        const password = document.getElementById('loginPassword').value;
-        
-        if (authenticate(email, password)) {
-            alert('Inicio de sesión exitoso');
-            window.location.href = 'COMINGSOON.html'; // Redirige a la última página
-        } else {
-            alert('Correo o contraseña incorrectos');
-        }
-    });
+    const loginForm = document.getElementById('loginForm');
+    const registerForm = document.getElementById('registerForm');
 
-    document.getElementById('registerForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const email = document.getElementById('registerEmail').value;
-        const password = document.getElementById('registerPassword').value;
-        const confirmPassword = document.getElementById('confirmPassword').value;
-        
-        if (password === confirmPassword) {
-            users.push({ email: email, password: password });
-            alert('Registro exitoso');
-            showLogin();
-        } else {
-            alert('Las contraseñas no coinciden');
-        }
-    });
+    if (loginForm) {
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            
+            if (authenticate(email, password)) {
+                alert('Inicio de sesión exitoso');
+                window.location.href = 'COMINGSOON.html';
+            } else {
+                alert('Correo o contraseña incorrectos');
+            }
+        });
+    }
+
+    if (registerForm) {
+        registerForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password === confirmPassword) {
+                users.push({ email: email, password: password });
+                alert('Registro exitoso');
+                showLogin();
+            } else {
+                alert('Las contraseñas no coinciden');
+            }
+        });
+    }
 });

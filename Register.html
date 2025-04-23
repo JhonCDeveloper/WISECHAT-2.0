@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INICIAR SESION</title>
+    <title>REGISTRARME</title>
     <link rel="stylesheet" href="./CSS/Inicio Sesion Registro.css">
     <link rel="icon" type="image/x-icon" href="Wisechat.ico">
     <style>
@@ -19,19 +19,9 @@
         </div>
         <div class="form-container">
             <div class="form-toggle">
-                <button id="toggleLogin" onclick="showLogin()">INICIAR SESIÓN</button>
-                <button id="toggleRegister" onclick="showRegister()">REGISTRARME</button>
+                <a id="toggleLogin" href="Login.html">INICIAR SESIÓN</a>
             </div>
-            <div id="loginForm" class="form-content">
-                <h2 class="h2">INICIAR SESIÓN</h2>
-                <form>
-                    <label for="loginEmail">Correo Electrónico</label>
-                    <input type="email" id="loginEmail" required>
-                    <label for="loginPassword">Contraseña</label>
-                    <input type="password" id="loginPassword" required>
-                    <button type="submit">Iniciar Sesión</button>
-                </form>
-            </div>
+            
             <div id="registerForm" class="form-content">
                 <h2 class="h2">REGISTRARME</h2>
                 <form>
@@ -46,6 +36,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // Asegurar que se muestre el formulario de registro al cargar esta página
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('registerForm').style.display = 'block';
+        });
+    </script>
+
     <script src="./JAVASCRIPT/Registro Inicio Sesion.js"></script>
 </body>
 </html>

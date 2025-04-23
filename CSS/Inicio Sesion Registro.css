@@ -50,6 +50,7 @@
       margin: 0 10px;
       border-radius: 9px;
       cursor: pointer;
+      text-decoration: none;
   }
   #toggleLogin:hover, #toggleRegister:hover {
       background-color: #5b2bbd;
