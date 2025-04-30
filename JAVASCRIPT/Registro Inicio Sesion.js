@@ -32,8 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const password = document.getElementById('loginPassword').value;
             
             if (authenticate(email, password)) {
-                alert('Inicio de sesión exitoso');
-                window.location.href = 'COMINGSOON.html';
+                window.location.href = 'form.html'; // Redirección sin alert
             } else {
                 alert('Correo o contraseña incorrectos');
             }

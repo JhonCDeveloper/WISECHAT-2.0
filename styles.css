@@ -213,6 +213,10 @@ p {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     header {
         flex-wrap: wrap;
         padding: 1rem 3%;
@@ -283,6 +287,11 @@ p {
 }
 
 @media (max-width: 480px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     h1 {
         font-size: 10vw;
     }
