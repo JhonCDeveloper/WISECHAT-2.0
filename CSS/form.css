@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --bg-black: #09090B;
+    --main-purple: #6E31DE;
+}
+
+body {
+    background-color: var(--bg-black);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    position: relative;
+    display: flex;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    width: 100vh;
+    border-radius: 20px;
+    top: 5vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    position: absolute;
+    font-size: 2.5rem;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    top: 8vh;
+    font-weight: 800;
+}
+
+.potenciarVentas {
+    color: var(--main-purple);
+}
+
+em {
+    color: var(--main-purple);
+    font-weight: 300;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.form-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 90vh;
+    margin: 44px auto;
+    background: #1C1C1E;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    box-sizing: border-box;
+}
+
+input {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+button {
+    background-color: #6E31DE;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5b2bbd;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+select {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.logo {
+    position: absolute;
+    width: 35vh;
+    object-fit: cover;
+    height: 100px;
+}

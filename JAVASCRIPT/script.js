@@ -15,9 +15,9 @@ function typeWriter() {
 
 // Iniciar la animación cuando la página cargue
 window.addEventListener('load', () => {
-  // Creamos las 5 líneas dinámicamente
+  // Se crean las 5 líneas dinámicamente
   const waveLoader = document.querySelector('.wave-loader');
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 40; i++) {
     const line = document.createElement('span');
     waveLoader.appendChild(line);
   }
@@ -25,11 +25,7 @@ window.addEventListener('load', () => {
   setTimeout(typeWriter, 1000);
 });
 
-// Ir a página de login al presionar quiero potenciar mis ventas
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('loginButton').addEventListener('click', function() {
-        document.getElementById('mensaje').textContent = '¡Has hecho clic en el botón!';
-    });
+
 
     // Hamburger menu toggle
     const hamburger = document.querySelector('.hamburger');
@@ -39,4 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
         navBar.classList.toggle('active');
         hamburger.classList.toggle('open');
     });
-});
+;

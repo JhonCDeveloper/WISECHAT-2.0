@@ -8,5 +8,134 @@
         <link rel="stylesheet" href="CSS/form.css">
     </head>
     <body>
-        
+       <a href="index.html"><img src="assets/Logo WiseChat.png" alt="Logo de Wisechat" class="logo"></a> 
+        <h1>¿LISTO PARA <span class="potenciarVentas">POTENCIAR TUS VENTAS?</span><br> <em>EMPECEMOS AQUÍ</em></h1>
+        <section class="container">
+            <div class="form-container">
+                <div id="formulario" class="form-wrapper">
+                    <form id="multiStepForm">
+                      
+                      <!-- Paso 1 -->
+                      <div class="step active">
+                        <label>¿CÓMO SE LLAMA TU NEGOCIO?</label>
+                        <input type="text" name="negocio" required>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+                  
+                      <!-- Paso 2 -->
+                      <div class="step">
+                        <label>¿CUÁL ES TU NOMBRE Y TU ROL EN LA EMPRESA? EJM: (JHON, CEO)</label>
+                        <input type="text" name="rol" required>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+                  
+                      <!-- Paso 3 -->
+                      <div class="step">
+                        <label>¿A QUÉ SECTOR PERTENECE TU NEGOCIO?</label>
+                        <select name="sector" required>
+                          <option value="">Selecciona una opción</option>
+                          <option>Alimentos y bebidas</option>
+                          <option>Moda y accesorios</option>
+                          <option>Belleza</option>
+                          <option>Servicios</option>
+                          <option>Tecnología</option>
+                          <option>Banca</option>
+                          <option>Otro</option>
+                        </select>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+                  
+                      <div class="step">
+                        <label>¿QUÉ PRODUCTOS O SERVICIOS OFRECES?</label>
+                        <input type="text" name="productos" required>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿DÓNDE VENDES TUS PRODUCTOS O SERVICIOS?</label>
+                        <select name="sector" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Solo en redes sociales</option>
+                            <option>Página web propia</option>
+                            <option>Tienda física</option>
+                            <option>Marketplaces (Mercado Libre, Amazon, etc.)</option>
+                            <option>WhatsApp u otras apps de mensajería</option>
+                            <option>Otro</option>
+                          </select>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿CÓMO DESCRIBIRÍAS A TU CLIENTE IDEAL? (EDAD, INTERÉSES, UBICACIÓN...)</label>
+                        <input type="text" name="cliente" required>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿CUÁNTOS MENSAJES PROMEDIO RECIBES AL DÍA DE POTENCIALES CLIENTES?</label>
+                        <select name="sector" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Menos de 10</option>
+                            <option>Menos de 10</option>
+                            <option>Más de 30</option>
+                            <option>Varía mucho</option>
+                          </select>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿QUÉ HERRAMIENTAS USAS ACTUALMENTE PARA COMUNICARTE CON TUS CLIENTES?</label>
+                        <select name="sector" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>WhatsApp Business</option>
+                            <option>Instagram/Facebook Inbox</option>
+                            <option>CRM</option>
+                            <option>Ninguna</option>
+                            <option>Otra</option>
+                          </select>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿CUÁL ES EL PASO MÁS DIFÍCIL EN TU PROCESO DE VENTA?</label>
+                        <select name="sector" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Captar la atención de clientes nuevos</option>
+                            <option>Recibir mensajes o consultas</option>
+                            <option>Responder rápidamente</option>
+                            <option>Cerrar la venta</option>
+                            <option>Hacer seguimiento</option>
+                            <option>Otra</option>
+                          </select>
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿TIENES UN EQUIPO QUE TE AYUDA CON VENTAS O ATENCIÓN AL CLIENTE?</label>
+                        <select name="sector" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Sí (¿cuántas personas?)</option>
+                            <option>No, lo hago todo solo(a)</option>
+                          </select>
+                          <input type="text" name="equipo" placeholder="Especifica cuántas personas">
+                        <button type="button" class="next-button">Siguiente</button>
+                      </div>
+
+                      <div class="step">
+                        <label>¿TE GUSTARÍA QUE WISECHAT TE SUGIERA RESPUESTAS AUTOMÁTICAS, EMBUDOS PERSONALIZADOS Y CONTENIDO?</label>
+                        <select name="sector" required>
+                            <option value="">Selecciona una opción</option>
+                            <option>Sí</option>
+                            <option>No</option>
+                            <option>Tal vez, depende de qué tan útil sea</option>
+                          </select>
+                          <input type="number" name="equipo" placeholder="Especifica cuántas personas">
+                          <button type="submit">Finalizar</button>
+                      </div>
+
+                    </form>
+                  </div>
+            </div>
+            <script src="/JAVASCRIPT/form.js"></script>
     </body>
+</html>
