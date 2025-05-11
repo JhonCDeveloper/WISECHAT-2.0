@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Obtener usuarios del localStorage o cargar los predeterminados
     let users = JSON.parse(localStorage.getItem('users')) || [
-        { email: "sergiioriivera7@gmail.com", password: "Sergio123" },
         { email: "Yuranytamara@gmail.com", password: "Tamara123" },
         { email: "jairovalencia100K19@gmail.com", password: "100K1718" },
         { email: "isagoz1708@gmail.com", password: "Isa123" },
