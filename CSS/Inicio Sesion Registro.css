@@ -83,6 +83,7 @@
   label {
       color: white;
       margin-bottom: 5px;
+      font-size: 0.9rem;
   }
   input {
       padding: 10px;
@@ -94,7 +95,7 @@
   button[type="submit"] {
       background-color: #6E31DE;
       color: white;
-      font-size: 18px;
+      font-size: 1rem;
       font-weight: 600;
       border: none;
       padding: 10px;

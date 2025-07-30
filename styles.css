@@ -290,6 +290,7 @@ p {
 
     .nav-bar.active {
         display: flex;
+        gap: 3rem;
     }
 
     main {
